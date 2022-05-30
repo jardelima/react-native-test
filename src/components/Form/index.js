@@ -37,7 +37,6 @@ export default function Form() {
     }
 
     function validationImc() {
-        console.log(imcList);
         if (weight !== null && height !== null) {
             imcCalculator();
             setMessageImc("Seu IMC é igual: ");
