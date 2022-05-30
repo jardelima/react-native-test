@@ -2,14 +2,15 @@ import {StyleSheet} from "react-native";
 
 const styles = StyleSheet.create({
     formContext: {
+        flex: 1,
         width: "100%",
         height: "100%",
-        bottom: 0,
         backgroundColor: "#fff",
-        alignItems: "center",
+        alignItems: "flex-start",
         marginTop: 30,
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
+        paddingHorizontal: 30,
     },
 
     form: {
@@ -17,7 +18,6 @@ const styles = StyleSheet.create({
         height: "auto",
         marginTop: 30,
         paddingTop: 10,
-        paddingHorizontal: 30,
     },
 
     formField: {
@@ -50,6 +50,23 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
     },
+
+    errorMessage: {
+        fontSize: 12,
+        color: "red",
+        fontWeight: "bold",
+    },
+
+    exhibitionResultImc: {
+        width: "100%",
+        height: "50%",
+    },
+
+    listImcsItem: {
+        width: "100%",
+        fontSize: 20,
+        marginVertical: 9,
+    }
 });
 
 export default styles;
